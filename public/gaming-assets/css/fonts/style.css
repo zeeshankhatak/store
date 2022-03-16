@@ -1,0 +1,124 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?viha8x');
+  src:  url('fonts/icomoon.eot?viha8x#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?viha8x') format('truetype'),
+    url('fonts/icomoon.woff?viha8x') format('woff'),
+    url('fonts/icomoon.svg?viha8x#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-down:before {
+  content: "\e91d";
+}
+.icon-arrow-up:before {
+  content: "\e91e";
+}
+.icon-dot-single:before {
+  content: "\e91b";
+}
+.icon-play-outline:before {
+  content: "\e915";
+}
+.icon-instagram:before {
+  content: "\e91c";
+}
+.icon-dot-circle-o:before {
+  content: "\e919";
+}
+.icon-facebook:before {
+  content: "\e90d";
+}
+.icon-facebook-f:before {
+  content: "\e90d";
+}
+.icon-circle-full:before {
+  content: "\e91a";
+}
+.icon-target:before {
+  content: "\e918";
+}
+.icon-play:before {
+  content: "\e914";
+}
+.icon-tiktok:before {
+  content: "\e90e";
+}
+.icon-discord:before {
+  content: "\e90f";
+  color: #7289da;
+}
+.icon-designed:before {
+  content: "\e900";
+}
+.icon-fb:before {
+  content: "\e901";
+}
+.icon-g:before {
+  content: "\e902";
+}
+.icon-insta:before {
+  content: "\e903";
+}
+.icon-linkedin:before {
+  content: "\e904";
+}
+.icon-mail:before {
+  content: "\e905";
+}
+.icon-phone:before {
+  content: "\e906";
+}
+.icon-quality:before {
+  content: "\e907";
+}
+.icon-since:before {
+  content: "\e908";
+}
+.icon-twitter:before {
+  content: "\e909";
+}
+.icon-warehouse:before {
+  content: "\e90a";
+}
+.icon-whats-app:before {
+  content: "\e90b";
+}
+.icon-youtube:before {
+  content: "\e90c";
+}
+.icon-check_circle_outline:before {
+  content: "\e917";
+}
+.icon-play_circle_outline:before {
+  content: "\e916";
+}
+.icon-keyboard_arrow_right:before {
+  content: "\e910";
+}
+.icon-keyboard_arrow_left:before {
+  content: "\e911";
+}
+.icon-keyboard_arrow_up:before {
+  content: "\e912";
+}
+.icon-keyboard_arrow_down:before {
+  content: "\e913";
+}
