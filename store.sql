@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Mar 16, 2022 at 05:00 PM
+-- Generation Time: Mar 17, 2022 at 10:34 AM
 -- Server version: 5.7.36
 -- PHP Version: 7.2.34
 
@@ -134,7 +134,7 @@ CREATE TABLE IF NOT EXISTS `country` (
   `title_Author` varchar(255) DEFAULT NULL,
   `country_Flag` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `country`
@@ -170,27 +170,36 @@ CREATE TABLE IF NOT EXISTS `items` (
   `attribute_ID` int(11) DEFAULT NULL,
   `compulsory_Choice_ID` int(11) DEFAULT NULL,
   `multi_Choice_ID` int(11) DEFAULT NULL,
-  `sub_cat_id` int(11) DEFAULT NULL,
-  `store_ID` int(11) NOT NULL,
+  `sub_cat_id` int(11) DEFAULT '1',
+  `store_ID` int(11) DEFAULT '1',
   `suggested_Items` int(11) DEFAULT NULL,
   `title_English` varchar(255) DEFAULT NULL,
   `title_Author` varchar(255) DEFAULT NULL,
   `desc_English` varchar(255) DEFAULT NULL,
   `desc_Author` varchar(255) DEFAULT NULL,
-  `price` double DEFAULT NULL,
-  `new_Price` double DEFAULT NULL,
-  `images` varchar(255) NOT NULL,
-  `city_id` int(11) NOT NULL,
-  `area_id` int(11) NOT NULL,
-  `stock` int(100) NOT NULL,
-  `status` int(11) NOT NULL,
+  `price` double DEFAULT '0',
+  `new_Price` double DEFAULT '0',
+  `images` varchar(255) DEFAULT NULL,
+  `city_id` int(11) DEFAULT '1',
+  `area_id` int(11) DEFAULT NULL,
+  `stock` int(100) DEFAULT NULL,
+  `status` int(11) NOT NULL DEFAULT '0',
   `arrival_Range` varchar(255) DEFAULT NULL,
   `hero_Image` varchar(255) DEFAULT NULL,
   `share_in_Development` int(11) DEFAULT NULL,
   `in_Stock` int(11) DEFAULT NULL,
   `hot_Price` double DEFAULT NULL,
   PRIMARY KEY (`item_ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `items`
+--
+
+INSERT INTO `items` (`item_ID`, `attribute_ID`, `compulsory_Choice_ID`, `multi_Choice_ID`, `sub_cat_id`, `store_ID`, `suggested_Items`, `title_English`, `title_Author`, `desc_English`, `desc_Author`, `price`, `new_Price`, `images`, `city_id`, `area_id`, `stock`, `status`, `arrival_Range`, `hero_Image`, `share_in_Development`, `in_Stock`, `hot_Price`) VALUES
+(1, NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, 555, 0, NULL, NULL, NULL, 5555, 0, NULL, NULL, NULL, NULL, NULL),
+(2, NULL, NULL, NULL, 8, 1, NULL, NULL, NULL, NULL, NULL, 55, 0, NULL, 1, 2, 5555, 0, NULL, NULL, NULL, NULL, NULL),
+(3, NULL, NULL, NULL, 9, 1, NULL, NULL, NULL, NULL, NULL, 77, 0, NULL, 3, 8, 900, 0, NULL, NULL, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
